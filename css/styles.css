@@ -48,6 +48,7 @@
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    align-items
     flex-wrap: wrap;
    
   }
@@ -55,6 +56,7 @@
   #header nav ul {
     display: flex;
     justify-content: center;
+    align-items
     flex-wrap: wrap;
   }
   
@@ -63,6 +65,7 @@
     font-size: 0.8rem;
     text-align: center;
     display: block;
+    margin-bottom: -10px;
   }
 
   #header nav .fa-twitter {
@@ -95,10 +98,19 @@
 
 }
 #second-menu ul{
-    display:flex;
+    display:none;
     justify-content:space-between;
     text-align:center;
 }
+#second-menu select{
+  display:inline-block;
+  margin: 10px auto;
+  padding: 15px 20px;
+  color:#fff;
+  background-color:#232323;
+
+}
+
 ul li a:hover{
     color:#DF7879;
     transition:ease 0.5s;
@@ -129,7 +141,7 @@ color:white
 
 }
 #yamo h1,#checkout h1{
-    font-size:2.5rem;
+    font-size:1.5rem;
     margin:25px 0;
     color:#E3CE90;
     font-weight:200;
@@ -320,25 +332,12 @@ footer span{
 
 }
   /* Small devices (landscape phones, 576px and up) */
- /* @media (min-width: 320px) {
-    .container {
+  @media (min-width: 320px) {
+    /* .container {
       max-width: 425px;
-    }
-    .card-color {
-      margin-top: -5px;
-    }
-    .cards .text {
-      padding: 20px;
-      margin-top: 50px;
-      min-height: 200px;
-    }
-    .cards p {
-      font-size: 0.7rem;
-    }
-    footer{
-  
-      margin-top: -50px;
-    }
+    } */
+ 
+   
   }
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
@@ -350,6 +349,16 @@ footer span{
     }
     .cards .card {
       width: 30%;
+    }
+    #second-menu select{
+      display:none;
+     
+    }
+    #second-menu ul{
+      display:flex;
+    }
+    #yamo h1,#checkout h1{
+      font-size:2.5rem;
     }
     footer{
         display:flex;
